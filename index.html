@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="style.css">
+
+ 
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+ <div class="form-container">
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+
+      <label for="firstName">First Name *</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name *</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label>Query Type *</label>
+      <div class="query-type">
+        <label><input type="radio" name="query" value="General Enquiry" required> General Enquiry</label>
+        <label><input type="radio" name="query" value="Support Request"> Support Request</label>
+      </div>
+
+      <label for="message">Message *</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" required>
+        I consent to being contacted by the team *
+      </label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
